@@ -1,0 +1,639 @@
+<html lang="en"><head>
+   <meta charset="UTF-8">
+   <title>Travelix</title>
+   <link rel="stylesheet" href="travelx_css.css">
+   <link href="http://fonts.cdnfonts.com/css/beyond-the-mountains" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="myscripts.js"></script>
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<div id="top_part">
+   <div id="connect" style="margin: -38px 0px 0px;">
+      <p>+91 824 023 5800</p>
+   <ul>
+      <li><a href="https://www.instagram.com/" class="inst"><span><i class="fa fa-pinterest social" aria-hidden="true"></i></span></a></li>
+      <li><a href="https://www.facebook.com/" class="inst"><span><i class="fa fa-facebook social" aria-hidden="true"></i></span></a></li>
+      <li><a href="https://www.twitter.com/" class="inst"><span><i class="fa fa-twitter social" aria-hidden="true"></i></span></a></li>
+      <li><a href="https://www.instagram.com/" class="inst"><span><i class="fa fa-dribbble social" aria-hidden="true"></i></span></a></li>
+      <li><a href="https://www.instagram.com/" class="inst"><span><i class="fa fa-behance social" aria-hidden="true"></i></span></a></li>
+      <li><a href="https://www.instagram.com/" class="inst"><span><i class="fa fa-linkedin social" aria-hidden="true"></i></span></a></li>
+      <div id="log">
+      <li class="sign">Login&nbsp;&nbsp;&nbsp;</li>
+      <li>|</li>
+      <li class="sign">&nbsp;&nbsp;&nbsp;REGISTER</li>
+      </div>
+   </ul>
+   </div>
+   <div id="name">
+      <a id="identity" href="#"><img src="images/icons/icon.jpg" alt="Travelix">
+         TRAVELIX
+      </a>
+      <div id="pages_top">
+         <div><a href="#">HOME</a></div>
+         <div><a href="#third_part">ABOUT US</a></div>
+         <div><a href="#fifth_part">OFFER</a></div>
+         <div><a href="#sixth_part">NEWS</a></div>
+         <div><a href="#eighth_part">CONTACT</a></div>
+      </div>
+      <div id="top_search_container">
+         <div id="search_icon"><span onclick="displaysearch()"><i class="fa fa-search" style="font-size: 1.3em; color: #ffeded;" aria-hidden="true"></i></span></div>
+         <input id="top_search" class="inactive" type="text">
+      </div>
+   </div>
+</div>
+<div id="first_part">
+   <div class="home_slider active" id="slide1">
+      <div class="Tran_element">
+         <h1 class="discover">DISCOVER</h1>
+         <h1 class="world">the world</h1>
+         <div class="explore button">
+            <a href="#">
+               EXPLORE NOW
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+            </a> 
+         </div>
+      </div>
+   </div>
+   <div class="home_slider" id="slide2">
+      <div class="Tran_element">
+         <h1 class="discover">DISCOVER</h1>
+         <h1 class="world">the world</h1>
+         <div class="explore button">
+            <a href="#">
+               EXPLORE NOW
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+            </a> 
+         </div>
+      </div>
+   </div>
+   <div class="home_slider" id="slide3">
+      <div class="Tran_element">
+         <h1 class="discover">DISCOVER</h1>
+         <h1 class="world">the world</h1>
+         <div class="explore button">
+            <a href="#">
+               EXPLORE NOW
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+            </a> 
+         </div>
+      </div>
+   </div>
+   <div class="arrow_border left_arrow" onclick="plusSlides(-1)"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg></span></div>
+   <div class="arrow_border right_arrow" onclick="plusSlides(1)"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span></div>
+   <div id="page_num">
+      <span class="page_indi active_page" onclick="currentSlide(1)">01.</span>
+      <span class="page_indi" onclick="currentSlide(2)">02.</span>
+      <span class="page_indi" onclick="currentSlide(3)">03.</span>
+   </div>
+</div>
+<div id="second_part">
+   <div id="booking_container">
+      <div id="booking_opt">
+            <div class="Hotel active_option options" onclick="currentOption(0)">
+               <img src="images/icons/hotel.jpg" alt="Hotel icon">
+               <span>HOTELS</span>
+            </div>
+            <div class="Car_rentals inactive_option options" onclick="currentOption(1)">
+               <img src="images/icons/car_rental.jpg" alt="Car Rental icon">
+               <span>CAR RENTALS</span>
+            </div>
+            <div class="Flight inactive_option options" onclick="currentOption(2)">
+               <img src="images/icons/flight.jpg" alt="Flight icon">
+               <span>FLIGHTS</span>
+            </div>
+            <div class="Trip inactive_option options" onclick="currentOption(3)">
+               <img src="images/icons/trip.jpg" alt="Trip icon">
+               <span>TRIPS</span>
+            </div>
+            <div class="Cruise inactive_option options" onclick="currentOption(4)">
+               <img src="images/icons/cruise.jpg" alt="Cruise icon">
+               <span>CRUISES</span>
+            </div>
+            <div class="Activity inactive_option options" onclick="currentOption(5)">
+               <img src="images/icons/activity.jpg" alt="Active icon">
+               <span>ACTIVITIES</span>
+            </div>
+      </div>
+   </div>
+   <div id="search_container">
+      <div id="form_container">
+         <form class="search_box">
+            <div>
+               <p class="search_heads">DESTINATION</p>
+               <input class="destination form_heads" type="text" required>
+            </div>
+            <div>
+              <p class="search_heads">CHECK IN</p>
+               <input class="check_in form_heads" type="text" placeholder="YYYY-MM-DD">
+            </div>
+            <div>
+               <p class="search_heads">CHECK OUT</p>
+               <input class="check_out form_heads" type="text" placeholder="YYYY-MM-DD">
+            </div>
+            <div>
+               <p class="search_heads">ADULTS</p>
+               <select class="adults form_heads" name="adult" id="adult_1">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+               </select>
+            </div>
+            <div>
+               <p class="search_heads">CHILDREN</p>
+               <select class="children form_heads" name="child" id="child_1">
+                  <option value="01">00</option>
+                  <option value="02">01</option>
+                  <option value="03">02</option>
+               </select>
+            </div>
+            <div class="search_but button">
+               <a href="">
+                  SEARCH
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+               </a>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+<div id="third_part"> 
+   <div id="word_container">
+      <h1>We have the best tours</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu 
+         convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae 
+         cursus mi hendrerit nec.
+      </p>
+   </div>
+   <div id="places">
+      <div id="mauritius" class="places_container">
+         <div class="dates">
+            May 25th - June 01st
+         </div>
+         <h1>Mauritius</h1>
+         <p>From $1450</p>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <div class="see_more button">
+           <a href="">
+            SEE MORE 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+           </a>
+         </div>
+      </div>
+      <div id="greece" class="places_container">
+         <div class="dates">
+            May 25th - June 01st
+         </div>
+         <h1>Greece</h1>
+         <p>From $1450</p>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <div class="see_more button">
+            <a href="">
+               SEE MORE 
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+            </a>
+         </div>
+      </div>
+      <div id="scotland" class="places_container">
+         <div class="dates">
+            May 25th - June 01st
+         </div>
+         <h1>Scotland</h1>
+         <p>From $1450</p>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <div class="see_more button">
+            <a href="">
+               SEE MORE 
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+            </a>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="forth_part">
+   <div class="package_slider active_package">
+      <h1>MALDIVES DELUX PACKAGE</h1>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <P>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+         Nullam eu convallis tortor.Suspendisse potenti. In faucibus massa arcu, vitae cursus 
+         mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, 
+         tortor augue gravida lectus, et efficitur enim justo vel ligula.
+      </P>
+      <div class="see_more button">
+         <a href="">
+            BOOK NOW
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+         </a>
+      </div>
+   </div>
+   <div class="package_slider inactive_package">
+      <h1>PARIS DELUX PACKAGE</h1>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <P>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+         Nullam eu convallis tortor.Suspendisse potenti. In faucibus massa arcu, vitae cursus 
+         mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, 
+         tortor augue gravida lectus, et efficitur enim justo vel ligula.
+      </P>
+      <div class="see_more button">
+         <a href="">
+            BOOK NOW
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+         </a>
+      </div>
+   </div>
+   <div class="package_slider inactive_package">
+      <h1>SWITZERLAND DELUX PACKAGE</h1>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <P>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+         Nullam eu convallis tortor.Suspendisse potenti. In faucibus massa arcu, vitae cursus 
+         mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, 
+         tortor augue gravida lectus, et efficitur enim justo vel ligula.
+      </P>
+      <div class="see_more button">
+         <a href="">
+            BOOK NOW
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+         </a>
+      </div>
+   </div>
+   <div class="arrow_border package_left_arrow" onclick="changePackage(-1)"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg></span></div>
+   <div class="arrow_border package_right_arrow" onclick="changePackage(1)"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span></div>
+</div>
+<div id="fifth_part">
+   <h1 id="claims">THE BEST OFFERS WITH ROOMS</h1>
+   <div id="offers">
+      <div id="grand_castle" class="offer_images">
+         <div class="offer_name">
+            GRAND CASTLE
+         </div>
+      </div>
+      <div id="grand_castle_details" class="offer_details">
+         <h1 class="price">$70</h1>
+         <span class="per_night"> per night </span>
+         <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+         </div>
+         <p>
+            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Nullam eu convallis tortor.
+         </p>
+         <ul>
+            <li><img src="images/icons/direction.jpg" alt=""></li>
+            <li><img src="images/icons/time.jpg" alt=""></li>
+            <li><img src="images/icons/cycle.jpg" alt=""></li>
+            <li><img src="images/icons/boat.jpg" alt=""></li>
+         </ul>
+         <h2>READ MORE</h2>
+      </div>
+      <div id="turkey_hills" class="offer_images">
+         <div class="offer_name">
+            TURKEY HILLS
+         </div>
+      </div>
+      <div id="turkey_hills_details" class="offer_details">
+         <h1 class="price">$50</h1>
+         <span class="per_night"> per night </span>
+         <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+         </div>
+         <p>
+            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Nullam eu convallis tortor.
+         </p>
+         <ul>
+            <li><img src="images/icons/direction.jpg" alt=""></li>
+            <li><img src="images/icons/time.jpg" alt=""></li>
+            <li><img src="images/icons/cycle.jpg" alt=""></li>
+            <li><img src="images/icons/boat.jpg" alt=""></li>
+         </ul>
+         <h2>READ MORE</h2>
+      </div>
+      <div id="island_dreams" class="offer_images">
+         <div class="offer_name">
+            ISLAND DREAM
+         </div>
+      </div>
+      <div id="island_dreams_details" class="offer_details">
+         <h1 class="price">$90</h1>
+         <span class="per_night"> per night </span>
+         <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+         </div>
+         <p>
+            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Nullam eu convallis tortor.
+         </p>
+         <ul>
+            <li><img src="images/icons/direction.jpg" alt=""></li>
+            <li><img src="images/icons/time.jpg" alt=""></li>
+            <li><img src="images/icons/cycle.jpg" alt=""></li>
+            <li><img src="images/icons/boat.jpg" alt=""></li>
+         </ul>
+         <h2>READ MORE</h2>
+      </div>
+      <div id="travel_light" class="offer_images">
+         <div class="offer_name">
+            TRAVEL LIGHT
+         </div>
+      </div>
+      <div id="travel_light_details" class="offer_details">
+         <h1 class="price">$30</h1>
+         <span class="per_night"> per night </span>
+         <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+         </div>
+         <p>
+            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Nullam eu convallis tortor.
+         </p>
+         <ul>
+            <li><img src="images/icons/direction.jpg" alt=""></li>
+            <li><img src="images/icons/time.jpg" alt=""></li>
+            <li><img src="images/icons/cycle.jpg" alt=""></li>
+            <li><img src="images/icons/boat.jpg" alt=""></li>
+         </ul>
+         <h2>READ MORE</h2>
+      </div>
+   </div>
+</div>
+<div id="sixth_part">
+   <h1 id="client_claims">WHAT OUR CLIENTS SAY ABOUT US</h1>
+   <div id="customer_quotes">
+      <div class="customer_boxs swimming">
+         <div class="feedback_icons">
+            <img src="images/icons/backpack.jpg" alt="">
+         </div>
+         <div class="customer_names">
+            <h1>CARLA SMITH</h1>
+            <span>May 24, 2017</span>
+         </div>
+         <div class="customer_feedback">
+            <h1>" Best holiday ever "</h1>
+            <p>
+               Nullam eu convallis tortor. Suspendisse potenti. 
+               In faucibus massa arcu, vitae cursus mi hendrerit nec.
+            </p>
+         </div>
+      </div>
+      <div class="customer_boxs infinity_pool">
+         <div class="feedback_icons">
+         <img src="images/icons/island.jpg" alt="">
+         </div>
+         <div class="customer_names">
+            <h1>CARLA SMITH</h1>
+            <span>May 24, 2017</span>
+         </div>
+         <div class="customer_feedback">
+            <h1>" Best holiday ever "</h1>
+            <p>
+               Nullam eu convallis tortor. Suspendisse potenti. 
+               In faucibus massa arcu, vitae cursus mi hendrerit nec.
+            </p>
+         </div>
+      </div>
+      <div class="customer_boxs surfing">
+         <div class="feedback_icons">
+            <img src="images/icons/rowing.jpg" alt="">
+         </div>
+         <div class="customer_names">
+            <h1>CARLA SMITH</h1>
+            <span>May 24, 2017</span>
+         </div>
+         <div class="customer_feedback">
+            <h1>" Best holiday ever "</h1>
+            <p>
+               Nullam eu convallis tortor. Suspendisse potenti. 
+               In faucibus massa arcu, vitae cursus mi hendrerit nec.
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+<hr>
+<div id="seventh_part">
+   <h1 id="trending">TRENDING NOW</h1>
+   <div id="hotels">
+      <div class="hotel_images" style="background: url(images/grand1.jpg);"></div>
+      <div class="hotel_details">
+         <h1 class="hotel_name">GRAND HOTEL</h1>
+         <span class="hotel_charge">From $182</span>
+         <p class="hotel_location">MADRID, SPAIN</p>
+      </div>
+      <div class="hotel_images" style="background: url(images/mars1_1.jpg);"></div>
+      <div class="hotel_details">
+         <h1 class="hotel_name">MARS HOTEL</h1>
+         <span class="hotel_charge">From $182</span>
+         <p class="hotel_location">MADRID, SPAIN</p></div>
+      <div class="hotel_images" style="background: url(images/queen1.jpg);"></div>
+      <div class="hotel_details">
+         <h1 class="hotel_name">QUEEN HOTEL</h1>
+         <span class="hotel_charge">From $182</span>
+         <p class="hotel_location">MADRID, SPAIN</p></div>
+      <div class="hotel_images" style="background: url(images/mars2_1.jpg);"></div>
+      <div class="hotel_details">
+         <h1 class="hotel_name">MARS HOTEL</h1>
+         <span class="hotel_charge">From $182</span>
+         <p class="hotel_location">MADRID, SPAIN</p></div>
+      <div class="hotel_images" style="background: url(images/grand2.jpg);"></div>
+      <div class="hotel_details">
+         <h1 class="hotel_name">GRAND HOTEL</h1>
+         <span class="hotel_charge">From $182</span>
+         <p class="hotel_location">MADRID, SPAIN</p></div>
+      <div class="hotel_images" style="background: url(images/mars1_2.jpg);"></div>
+      <div class="hotel_details">
+         <h1 class="hotel_name">MARS HOTEL</h1>
+         <span class="hotel_charge">From $182</span>
+         <p class="hotel_location">MADRID, SPAIN</p></div>
+      <div class="hotel_images" style="background: url(images/queen2.jpg);"></div>
+      <div class="hotel_details">
+         <h1 class="hotel_name">QUEEN HOTEL</h1>
+         <span class="hotel_charge">From $182</span>
+         <p class="hotel_location">MADRID, SPAIN</p></div>
+      <div class="hotel_images" style="background: url(images/mars2_2.jpg);"></div>
+      <div class="hotel_details">
+         <h1 class="hotel_name">MARS HOTEL</h1>
+         <span class="hotel_charge">From $182</span>
+         <p class="hotel_location">MADRID, SPAIN</p>
+      </div>
+   </div>
+</div>
+<div id="eighth_part">
+   <div id="blend_container">
+      <div id="contact">
+         <h1>GET IN TOUCH</h1>
+         <form action="#">
+            <input type="text" placeholder="Name" class="form_input name">
+            <input type="text" placeholder="E-mail" class="form_input email">
+            <input type="text" placeholder="Subject" class="form_input subject">
+            <textarea name="message" placeholder="Message" rows="4" class="form_input message"></textarea>
+            <div class="send_message button">
+               <a href="">
+                  SEND MESSAGE 
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+               </a>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+<div id="ninth_part">
+   <div id="outro">
+      <div class="outro_boxes travelix">
+         <a id="identity_2" href="#"><img src="images/icons/icon.jpg" alt="Travelix">
+            TRAVELIX
+         </a>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus quis vu lputate eros, iaculis consequat nisl. 
+            Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.
+         </p>
+         <ul>
+            <li><a href="https://www.instagram.com/" class="inst"><span><i class="fa fa-pinterest social_2" aria-hidden="true"></i></span></a></li>
+            <li><a href="https://www.facebook.com/" class="inst"><span><i class="fa fa-facebook social_2" aria-hidden="true"></i></span></a></li>
+            <li><a href="https://www.twitter.com/" class="inst"><span><i class="fa fa-twitter social_2" aria-hidden="true"></i></span></a></li>
+            <li><a href="https://www.instagram.com/" class="inst"><span><i class="fa fa-dribbble social_2" aria-hidden="true"></i></span></a></li>
+            <li><a href="https://www.instagram.com/" class="inst"><span><i class="fa fa-behance social_2" aria-hidden="true"></i></span></a></li>
+            <li><a href="https://www.instagram.com/" class="inst"><span><i class="fa fa-linkedin social_2" aria-hidden="true"></i></span></a></li>
+         </ul>
+      </div>
+      <div class="outro_boxes">
+         <h1>BLOG POSTS</h1>
+         <div class="blogs">
+         <div class="blog_posts">
+            <div class="blog_images bi_1"></div>
+            <span class="blog_details">Travel with us this year</span>
+            <p class="blog_dates">Nov 29, 2017</p>
+         </div>
+         <div class="blog_posts">
+            <div class="blog_images bi_2"></div>
+            <span class="blog_details">New destinations for you</span>
+            <p class="blog_dates">Nov 29, 2017</p>
+         </div>
+         <div class="blog_posts">
+            <div class="blog_images bi_3"></div>
+            <span class="blog_details">Travel with us this year</span>
+            <p class="blog_dates">Nov 29, 2017</p>
+         </div>
+         </div>
+      </div>
+      <div class="outro_boxes">
+         <h1>TAGS</h1>
+         <div class="tag_divs">design</div>
+         <div class="tag_divs">fashion</div>
+         <div class="tag_divs">music</div>
+         <div class="tag_divs">video</div>
+         <div class="tag_divs">party</div>
+         <div class="tag_divs">photography</div>
+         <div class="tag_divs">adventure</div>
+         <div class="tag_divs">travel</div>
+      </div>
+      <div class="outro_boxes">
+         <h1>CONTACT INFO</h1>
+         <div class="contact_box">
+            <object data="images/icons/placeholder.svg" class="contact_icons"> </object>
+         <span>4127 Raoul Wallenber 45b-c Gibraltar</span>
+         </div>
+         <div class="contact_box">
+            <object data="images/icons/phone-call.svg" class="contact_icons"> </object>
+            <span>2556-808-8613</span>
+         </div>
+         <div class="contact_box">
+            <object data="images/icons/message.svg" class="contact_icons"> </object>
+            <span>contactme@gmail.com</span>
+         </div>
+         <div class="contact_box">
+            <object data="images/icons/planet-earth.svg" class="contact_icons"> </object>
+            <span>www.colorlib.com</span>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="footer">
+   <p>Copyright ©2022 All rights reserved | This <br>
+      template is made with <span><i class="fa fa-heart-o" aria-hidden="true"></i></span> by <span id="colorlib">Colorlib</span>
+   </p>
+   <div id="pages">
+      <div class="pages_name">
+         <a href="#"><h1>HOME</h1></a>
+      </div>
+      <div class="pages_name">
+         <a href="#third_part"><h1>ABOUT US</h1></a>
+      </div>
+      <div class="pages_name">
+         <a href="#fifth_part"><h1>OFFER</h1></a>
+      </div>
+      <div class="pages_name">
+         <a href="#sixth_part"><h1>NEWS</h1></a>
+      </div>
+      <div class="pages_name">
+         <a href="#eighth_part"><h1>CONTACT</h1></a>
+      </div>
+   </div>
+</div>
+</body>
+</html>
